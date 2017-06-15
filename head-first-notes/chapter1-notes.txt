@@ -1,0 +1,23 @@
+- The structure of an HTTP conversation is Request/Response
+
+- Request Stream: HTTP Method, page to access (URL), and form parameters
+
+- Response Stream: Status code, content-type, and content
+
+- HTTP Methods -> GET, POST, HEAD, TRACE, PUT, DELETE, OPTIONS, and CONNECT
+
+- Payload -> message body (of POST request)
+
+- MIME type -> the content type response headers value, it relates to the "accept type" found
+in the client request
+
+- A web server only dishes out static html; to generate dynamic sites, it relies on helper apps
+
+- A DD -> deployment descriptor
+    -- one per web application
+    -- can declare many servlets
+    -- a <servlet-name> ties the <servlet> to the <servlet-mapping> element.
+    -- a <servlet-class> is the Java class
+    -- a <url-pattern> is the name the client uses for the request
+
+- A JSP page looks just like an HTML page, except you can put Java code inside it
