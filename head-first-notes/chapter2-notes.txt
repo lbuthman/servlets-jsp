@@ -1,0 +1,14 @@
+- Tomcat is an example of a container.
+    -- The container gives the servlet the HTTP request and response.
+    -- The container calls the servlet's methods (like doPost() or doGet())
+
+- Servlets extend HttpServlet, typically overriding doGet(), doPost(), etc., no main() method
+
+- A servlet can have three names
+    1) a file path name -> fully qualified class and package
+    2) a deployment name -> a secret internal name that may or may not be similar to file path name
+    3) a public URL name -> the name the client knows about
+
+- Need two declarations in DD for mapping
+    1) map client-known URL to internal name -- <url-pattern> and <servlet-name>
+    2) map internal name to fully-qualified class name -- <servlet-name> and <servlet-class>
