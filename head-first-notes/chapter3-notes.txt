@@ -1,0 +1,21 @@
+- Four steps to hands-on project
+    1) Review user's view (what the browser displays) and the high level architecture
+    2) Create the development environment
+    3) Create the deployment environment
+    4) Perform Test-Driven Development
+
+1a) HTML Page that generates HTTP Post request w/ params -- Return JSP
+
+1b) client requests form.html -> container retrieves form.html -> container returns form.html
+  -> browser sends request data to container -> container finds correct servlet based on URL
+  and passes request to servlet -> servlet calls class -> class returns "answer" and servlet
+  adds it to the request object -> servlet forwards request to JSP -> JSP gets answer from
+  request object -> JSP generates page for the container -> container returns page to the user
+
+2) and 3) -> follow the directory structure in the book, not an necessarily an industry standard
+
+4) a) Build and test the HTML
+   b) Build and test v.1 of the controller servlet
+   c) Build and test model class
+   d) Upgrade servlet to v.2 to call model and get result
+   e) Build JSP, upgrade to servlet v.3 and test
