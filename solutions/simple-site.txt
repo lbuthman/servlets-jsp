@@ -1,0 +1,60 @@
+1. create development environment (directory structure)
+    -- (projects directory)
+        -- (project name)
+            -- etc
+                -- web.xml
+            -- lib
+                -- (third party JARs)
+            -- src
+                -- localhost (or website structure starting with com)
+                    -- web
+                        -- (controller classes)
+                    -- model
+                        -- (model classes)
+            -- classes (auto-created during build)
+            -- web
+                -- (jsp files)
+                -- (html files)
+
+2. create deployment environment
+    -- tomcat
+        -- webapps
+        -- (project name)
+        -- (copied html)
+        -- (copied jsp)
+        -- WEB-INF
+            -- web.xml
+            -- lib
+            -- classes
+                -- localhost (or website structure starting with com)
+                    -- web
+                        -- (copied compiled class files)
+                    -- model
+                        -- (copied compiles class files)
+
+3. create basic html with
+    <form method="POST" action="Class.do">
+        <input type="submit">
+    </form>
+
+4. copy the html to the tomcat directory
+
+5. create the DD in development environment
+
+    <?xml version="1.0" encoding="UTF-8"?>
+    <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+             xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/localhost.web-app_3_1.xsd"
+             version="3.1">
+
+    create <servlet> with <servlet-name> and <servlet-class>
+        -- servlet-name -> name used on in DD
+        -- servlet-class -> absolute path to servlet class
+
+    create <servlet-mapping> with <servlet-name> and <url-pattern>
+        -- servlet-name -> name used above
+        -- url-pattern -> what the user will use, Class.do convention
+
+6. copy the xml file to the tomcat directory
+
+7. start tomcat and navigate to http://localhost:8080/project-name/(index.html)
