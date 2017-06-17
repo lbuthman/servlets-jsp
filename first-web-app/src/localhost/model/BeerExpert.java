@@ -4,7 +4,7 @@ import java.util.*;
 
 /**
  * Created by lbuthman on 6/15/17.
- * model class
+ * localhost.model class
  */
 
 public class BeerExpert {
