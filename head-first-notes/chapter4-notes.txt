@@ -1,0 +1,27 @@
+- A servlet's job is to take a client's request and sent back a response.
+
+- A servlet's lifecycle is one of
+    -> initialized, being initialized, being destroyed, or doesn't exist
+
+- The Container's role in a servlet lifecycle
+    -> User clicks a URL to a servlet
+    -> The Container sees the request is for a servlet so creates a HttpServletResponse and
+    HttpServletRequest objects
+    -> Container finds correct servlet based on URL, creates/allocates thread, calls servlet's
+    service method passing in request and response objects
+    -> etc.
+
+- Servlet service methods, inherited from HttpServlet, are overridden to provide functionality
+
+- Servlet classes are instantiated and initialized when the container starts or "just-in-time"
+
+- POST has a body while GET does not. In other words, both have a Request header but only POST
+has a body (payload). GET shows its parameters in the URL, and because of this the web page can
+be bookmarked. GET is used to get data, POST is used to read/update data.
+
+- POST is not idempotent since the data submitted might not be reversible. Idempotent generally
+means a request can be made twice without negative consequences on the server.
+
+- GET is always used in an <a> tag href hyperlink, while method="POST" is used for POST. Not
+specifying a method will result in a GET request and could result in an error if the wrong
+doGet() or doPost() gets called.
