@@ -34,6 +34,7 @@
 
 3. create basic html with
     <form method="POST" action="Class.do">
+        <input name="name"> -> name will be target in request.getParameter("name")
         <input type="submit">
     </form>
 
@@ -44,7 +45,8 @@
     <?xml version="1.0" encoding="UTF-8"?>
     <web-app xmlns="http://xmlns.jcp.org/xml/ns/javaee"
              xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/localhost.web-app_3_1.xsd"
+             xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee
+             http://xmlns.jcp.org/xml/ns/javaee/localhost.web-app_3_1.xsd"
              version="3.1">
 
     create <servlet> with <servlet-name> and <servlet-class>
@@ -58,3 +60,22 @@
 6. copy the xml file to the tomcat directory
 
 7. start tomcat and navigate to http://localhost:8080/project-name/(index.html)
+
+----------------------------------------------------------------------------------------
+
+8. create controller class in web directory
+    -- import javax.servlet.*; javax.servlet.http.*; java.io.*
+    -- class extends HttpServlet
+
+9. override service method (doPost())
+    -- HttpServletRequest request, HttpServletResponse response
+    -- throws IOException; ServletException
+    -- call setContentType("text/html") on response parameter
+    -- create a PrintWriter with response.getWriter() -> temp testing use only
+    -- get user input by called request.getParameter("name") based on name in html
+    -- write output with PrintWriter
+
+10. build project -> copy controller class to tomcat directory
+
+11. restart tomcat
+
