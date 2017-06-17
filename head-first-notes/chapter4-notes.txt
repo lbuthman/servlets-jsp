@@ -25,3 +25,5 @@ means a request can be made twice without negative consequences on the server.
 - GET is always used in an <a> tag href hyperlink, while method="POST" is used for POST. Not
 specifying a method will result in a GET request and could result in an error if the wrong
 doGet() or doPost() gets called.
+
+Quiz 6-17 -> missed #2, #5, #6, #7, #8, #9
