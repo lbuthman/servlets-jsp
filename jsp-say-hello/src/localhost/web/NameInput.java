@@ -1,5 +1,6 @@
 package localhost.web;
 
+import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -40,7 +41,9 @@ public class NameInput extends HttpServlet {
                 message = NameType.MORPHING_ENTITY.welcomeType(name);
         }
 
-        out.print(message);
+        request.setAttribute("message", message);
+        RequestDispatcher view = request.getRequestDispatcher("result.jsp");
+        view.forward(request, response);
 
     }
 }
