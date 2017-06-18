@@ -79,3 +79,12 @@
 
 11. restart tomcat
 
+----------------------------------------------------------------------------------------
+
+12. create model class in model directory
+    -- this is whatever functionality required for logic processing
+
+13. add dependency in controller class
+    -- import package
+    -- instantiate class and call whatever methods are needed
+
