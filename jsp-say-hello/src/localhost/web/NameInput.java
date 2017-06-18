@@ -7,6 +7,8 @@ import javax.servlet.http.HttpServletResponse;
 import java.io.IOException;
 import java.io.PrintWriter;
 
+import localhost.model.NameType;
+
 /**
  * Created by lbuthman on 6/17/17.
  *
@@ -21,7 +23,24 @@ public class NameInput extends HttpServlet {
         response.setContentType("text/html");
         PrintWriter out = response.getWriter();
         String name = request.getParameter("name");
-        out.print("Hello! " + name + ", charmed I'm sure.");
+        String type = request.getParameter("type");
+        String message = "";
+
+        switch (type.toLowerCase()) {
+            case "vampire":
+                message = NameType.VAMPIRE.welcomeType(name);
+                break;
+            case "demi-god":
+                message = NameType.DEMI_GOD.welcomeType(name);
+                break;
+            case "spirit":
+                message = NameType.SPIRIT.welcomeType(name);
+                break;
+            case "morphing-entity":
+                message = NameType.MORPHING_ENTITY.welcomeType(name);
+        }
+
+        out.print(message);
 
     }
 }
