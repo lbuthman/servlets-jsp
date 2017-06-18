@@ -5,11 +5,17 @@
     <title>Say Hello</title>
 </head>
 <body>
-    <h5>What's up?! What's your name?
-        <form method="post" action="NameInput.do">
-            <input name="name">
-            <input type="submit">
-        </form>
-    </h5>
+    <form method="post" action="NameInput.do">
+        <p>What's up?! What's your name?</p>
+        <input name="name">
+        <p>How do you identify?</p>
+        <select name="type">
+            <option>vampire</option>
+            <option>demi-god</option>
+            <option>spirit</option>
+            <option>morphing-entity</option>
+        </select>
+        <input type="submit">
+    </form>
 </body>
 </html>
