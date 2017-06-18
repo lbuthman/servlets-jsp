@@ -88,3 +88,21 @@
     -- import package
     -- instantiate class and call whatever methods are needed
 
+14. recompile copy classes and restart tomcat
+
+----------------------------------------------------------------------------------------
+
+15. create jsp
+    -- has a standard preamble auto-added by IntelliJ
+    -- add standard HTML
+    -- use <% (java code) %> for functionality
+        -- add Type variable = (Type) request.getAttribute("identifier")
+
+16. copy jps to tomcat directory (no need to compile)
+
+17. modify controller class to use jsp instead
+    -- set the attribute identifier defined above request.setAttribute("identifier", object)
+    -- create a RequestDispatcher view = request.getRequestDispatcher("name-of-jsp.jsp")
+    -- call the forward method on view -> view.forward(request, response)
+
+14. recompile copy classes and restart tomcat
