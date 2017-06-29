@@ -1,1 +1,15 @@
+- Simple JSP - pg 283
 
+- JSP expressions, variables, and declarations - pg 288
+
+- JSP-generated servlet - pg 296
+
+- implicit objects - pg 298
+
+- Lifecycle and init of JSP - pg 306
+
+- Three directives - pg 314
+
+- EL - pg 317
+
+- actions - pg 323
