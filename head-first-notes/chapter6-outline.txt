@@ -1,1 +1,17 @@
+- How sessions work - pg. 226
 
+- Session IDs, cookies, and other session basics - pg. 231
+
+- URL rewriting - pg. 237
+
+- Getting rid of bad sessions - pg. 241
+
+- Other uses of cookies - pg. 250
+
+- Key milestones for HttpSession - pg. 254
+
+- HttpSessionBindingListener - pg. 256
+
+- Session migration - pg. 257
+
+- Listener examples - pg. 261
