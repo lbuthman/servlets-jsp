@@ -1,31 +1,34 @@
 How to tie pieces and components together, hide information, and make it thread-safe.
 
-- Init parameters and ServletConfig
+- Init parameters and ServletConfig - p. 149
+  -- 
 
-- JSP get servlet parameters
+- JSP get servlet parameters - p. 155
 
-- Context init parameters
+- Context init parameters - p. 157
 
-- Comparing ServletConfig with ServletContext
+- Comparing ServletConfig with ServletContext - p. 159
 
-- ServletContextListener
+- ServletContextListener - p. 166
 
-- a simple ServletContextListener
+- a simple ServletContextListener - p. 168
 
-- the full story of ServletContextListener
+- the full story of ServletContextListener - p. 178
 
-- what is an attribute?
+- Eight Listeners - p. 180
 
-- the AttributeAPI and its dark side
+- what is an attribute? - p. 185
 
-- Context scope isn't thread-safe
+- the AttributeAPI and its dark side - p. 189
 
-- Synchronization
+- Context scope isn't thread-safe - p. 192
 
-- Are Session attributes thread-safe?
+- Synchronization - p. 195
 
-- the SingleThreadModel
+- Are Session attributes thread-safe? - p. 198
 
-- Only Request attributes and local variables are thread-safe
+- the SingleThreadModel - p. 201
 
-- Request attributes and Request dispatching
+- Only Request attributes and local variables are thread-safe - p. 204
+
+- Request attributes and Request dispatching - p. 205
