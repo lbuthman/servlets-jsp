@@ -1,1 +1,29 @@
+- When attributes are beans - pg 345
 
+- standard actions on beans - pg 349
+
+- polymorphic bean reference? - pg 354
+
+- param attribute - pg 360
+
+- converting properties - pg 363
+
+- EL - pg 368
+
+- dot notation - pg 370
+
+- square bracket notation - pg 372
+
+- more on dot and square bracket notation - pg 376
+
+- EL implicit object - pg 385
+
+- EL functions and handling "null" - pg 392
+
+- reusable template pieces - pg 402
+
+- <jsp:forward> standard action - pg 416
+
+- JSTL tags - pg 417
+
+- reviewing standard actions and include - pg 417
