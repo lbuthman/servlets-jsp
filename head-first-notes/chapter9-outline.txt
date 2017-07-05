@@ -1,1 +1,29 @@
+- Looping without scripting <c:forEach> - pg. 446
 
+- Conditional control <c:if> <c:choose> - pg. 451
+
+- Using <c:set> and <c:remove> - pg. 455
+
+- With <c:import> there are three ways to include content - pg. 460
+
+- Customizing the thing you include - pg. 462
+
+- Doing the same thing with <c:param> - pg. 463
+
+- <c:url> for all your url needs - pg. 465
+
+- Make your own error page - pg. 468
+
+- The <c:catch> tag - pg. 472
+
+- What if you need a tag that's not JSTL? - pg. 475
+
+- Pay attention to <rtexprvalue> - pg. 480
+
+- What can be in a tag body - pg. 482
+
+- The tag handler, the TLD, and the JSP - pg. 483
+
+- The taglib <uri> is just a name, not a location - pg. 484
+
+- When a JSP uses more than one tag library - pg. 487
