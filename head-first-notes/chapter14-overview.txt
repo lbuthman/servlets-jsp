@@ -1,1 +1,21 @@
+- Hardware and software forces behind patterns - pg. 739
 
+- Review of software design principles - pg. 744
+
+- Patterns to support remote model components - pg. 745
+
+- Overview of JNDI and RMI - pg. 747
+
+- The Business Delegate is a "go-between" - pg. 753
+
+- Time for a Transfer Object - pg. 759
+
+- Business tier patterns: quick review - pg. 761
+
+- Our very first pattern revisited ... MVC - pg. 762
+
+- Yes! It's Struts (and FrontController) in a nutshell - pg. 767
+
+- Refactoring the Beer app for Struts - pg. 770
+
+- Review of patterns - pg. 778
